@@ -1,7 +1,7 @@
 num1:int=None
 num2:int=None
 math:str=None
-result:int=None
+result:float=None
 
 print("Kérek egy számot")
 num1=int(input())
