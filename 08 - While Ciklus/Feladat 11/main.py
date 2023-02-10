@@ -8,7 +8,7 @@ count2:int=0
 average:float=None
 db:int=0
 
-while(firstNumber==None and secondNumber==None and random==firstNumber and random==secondNumber):
+while(firstNumber==None and secondNumber==None and random==firstNumber and random==secondNumber): #ketto while ismet#
     print("Kérem adjon meg egy páros számot")
     firstNumber=int(input())
     print("Kérem adjon meg egy páratlan számot")

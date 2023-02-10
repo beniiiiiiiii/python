@@ -10,11 +10,11 @@ solution=randint(0,9)
 while(tries<5):
     print("találja ki a számot")
     temp=input()
-    if temp.isnumeric():
+    if (temp.isnumeric()):
         number=int(temp)
     else:
         continue
-    if solution==number:
+    if (solution==number):
         print("Kitalálta a számot")
     else:
         tries+=1

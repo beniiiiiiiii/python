@@ -3,7 +3,7 @@ temp:str=None
 osszeg:int=0
 osztas:float=0
 
-while(nNumber==None):
+while(nNumber==None): #meg kell nézni h 2-jegyu és pozitiv#
     print("Kérem adjon meg egy páros számot")
     temp=input()
     if (temp.isnumeric):

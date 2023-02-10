@@ -3,7 +3,7 @@ numberBig:int=None
 tempSmall:str=None
 tempBig:str=None
 
-while(numberSmall==None or numberBig==None or numberSmall>=numberBig):
+while(numberSmall==None or numberBig==None or numberSmall>=numberBig): #ketto while kell. kuka#
     print("Kérek egy számot")
     tempSmall=input()
     print("Kérek egy másik számot")
