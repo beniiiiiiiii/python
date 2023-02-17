@@ -5,11 +5,12 @@ number:str=None
 osszeg:int=0
 db:int=0
 
-print("Kérem adjon meg egy maximum értéket") #ujra nem jo. minden a whileon belul van#
-maximum=int(input())
+ 
 
-while (osszeg<maximum):
-    
+
+while (maximum==None and osszeg>=maximum):#nem jo a while feltetele. nem addig keregeti a szamokat ameddig az osszeg a maximum ertek#
+    print("Kérem adjon meg egy maximum értéket")
+    maximum=int(input())
     print("Kérek egy számot")
     temp=input()
     if (temp.isnumeric()):
