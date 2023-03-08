@@ -2,7 +2,7 @@ temp:str=None
 savedMoney:float=None
 months:int=0
 #ide egy while#
-while(savedMoney==None and savedMoney<=0):
+while(savedMoney==None or savedMoney<=0):
     print("Kérem adja meg a pénze mennyiségét")
     temp=input
     if (temp.isnumeric()):
