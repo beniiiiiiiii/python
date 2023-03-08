@@ -1,16 +1,17 @@
 maximum:int=None
 temp:str=None
 maxTemp:str=None
-number:str=None
+number:int=None
 osszeg:int=0
 db:int=0
 
- 
-
-
-while (maximum==None and osszeg>=maximum):#nem jo a while feltetele. nem addig keregeti a szamokat ameddig az osszeg a maximum ertek#
+while (maximum==None or maximum<100):#nem jo a while feltetele. nem addig keregeti a szamokat ameddig az osszeg a maximum ertek#
     print("Kérem adjon meg egy maximum értéket")
-    maximum=int(input())
+    maxTemp=input()
+    if (maxTemp.isnumeric()):
+        maximum=int(maxTemp)
+
+while(number==None and osszeg>=100):
     print("Kérek egy számot")
     temp=input()
     if (temp.isnumeric()):
@@ -19,5 +20,3 @@ while (maximum==None and osszeg>=maximum):#nem jo a while feltetele. nem addig k
     db+=1
     print(f"A számok összege: {osszeg}")
     print(f"Próbálkozások száma: {db}")
-if osszeg>=maximum:
-    print(f"{db} lépésben érte el a megadott határértéket")

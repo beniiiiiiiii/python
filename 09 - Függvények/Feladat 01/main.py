@@ -1,18 +1,25 @@
 from os import system
-system("cls")
+system('cls')
+from mathfunctions import *
+from consolio import *
 
-def muveletek(x:float, y:float)->float:
-    osszeg:float=x+y
-    kulombseg1:float=x-y
-    kulombseg2:float=y-x
-    szorzat:float=x*y
-    hanyados1:float=x/y
-    hanyados2:float=y/x
 
-    return osszeg, kulombseg1, kulombseg2, szorzat, hanyados1, hanyados2
+x:float=None
+y:float=None
 
-x:float=10
-y:float=4
+result:float=None
 
-eredmeny:float=muveletek(x,y)
-print(f"{x} és {y}-al való műveletek eredményei: {eredmeny}")
+x=getNumberFromConsol()
+y=getNumberFromConsol()
+
+result=szumOfTwoNumbers(x,y)
+printToConsole(x,y,result,"+")
+
+result=differenceOfTwoNumbers(x,y)
+printToConsole(x,y,result,"-")
+
+result=multiplicationOfTwoNumbers(x,y)
+printToConsole(x,y,result,"*")
+
+result=divisionOfTwoNumbers(x,y)
+printToConsole(x,y,result,"/")

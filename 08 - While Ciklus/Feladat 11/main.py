@@ -3,8 +3,8 @@ from random import randint
 firstNumber:int=None
 secondNumber:int=None
 random:int=None
-count1:int=0
-count2:int=0
+firstCount:int=0
+secondCount:int=0
 average:float=None
 db:int=0
 
@@ -18,14 +18,14 @@ while(secondNumber==None and random==secondNumber):
     print(random)
     
     for i in range(firstNumber, random, 1):
-        count1+=1
-    print(f"A páros szám és a random szám közti táv:{count1}")
+        firstCount+=1
+    print(f"A páros szám és a random szám közti táv:{firstCount}")
 
     for j in range(random, secondNumber, 1):
-        count2+=1
-    print(f"A páratlan szám és a random szám közti táv:{count2}")
+        secondCount+=1
+    print(f"A páratlan szám és a random szám közti táv:{secondCount}")
 
-    if (count1>count2):
+    if (firstCount>secondCount):
         print("A véletlen szám a páros számtól van messzebb")
     else:
         print("A véletlen szám a páratlan számtól van messzebb")

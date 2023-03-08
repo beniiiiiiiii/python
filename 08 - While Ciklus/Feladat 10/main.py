@@ -3,10 +3,10 @@ temp:str=None
 osszeg:int=0
 osztas:float=0
 
-while(nNumber==None): 
+while(nNumber==None or nNumber<9 or nNumber>100 or nNumber%2!=0): 
     print("Kérem adjon meg egy pozitív, kérjegyű számot")
     temp=input()
-    if (temp.isnumeric and temp.len()==2 and temp>0):#nem jo a .len()#
+    if (temp.isnumeric()):#nem jo a .len()#
         nNumber=int(temp)
 
 print("A választott szám és 0 közti páros számok")
