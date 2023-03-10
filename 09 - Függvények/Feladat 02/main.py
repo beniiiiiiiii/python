@@ -1,12 +1,4 @@
-from os import system
-system("cls")
+from consolio import *
 
-def udvozles(nev:str)->None:
-    print(f"Üdvözlöm {nev}")
-
-nev:str=None
-
-print("Kérem adja meg a nevét")
-nev=str(input())
-
-udvozles(nev)
+name:str=readNameFromConsole()
+printWelcomingMessage(name)

@@ -5,10 +5,7 @@ def szumOfTwoNumbers(a:float, b:float)->float:
 
 def differenceOfTwoNumbers(a:float, b:float)->float:
     result:float=None
-    if a>b:
-        result=a-b
-    else:
-        result=b-a
+    result=a-b
     return result
 
 def multiplicationOfTwoNumbers(a:float, b:float)->float:
@@ -18,8 +15,5 @@ def multiplicationOfTwoNumbers(a:float, b:float)->float:
 
 def divisionOfTwoNumbers(a:float, b:float)->float:
     result:float=None
-    if a>b:
-        result=a/b
-    else:
-        result=b/a
+    result=a/b
     return result
